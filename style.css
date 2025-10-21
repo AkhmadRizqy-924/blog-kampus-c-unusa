@@ -1,34 +1,112 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
+/* ===== STYLE UNTUK BLOG KAMPUS C UNUSA ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
   margin: 0;
-  background: #f9fafb;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f6f9fc;
   color: #222;
+  line-height: 1.7;
 }
 
+/* ===== HEADER ===== */
 header {
-  background: linear-gradient(90deg, #06b6d4, #3b82f6);
+  background: linear-gradient(90deg, #00897b, #4caf50);
   color: white;
-  padding: 40px 20px;
   text-align: center;
+  padding: 70px 20px;
+  background-image: url('https://www.unusa.ac.id/wp-content/uploads/2023/12/UNUSA-Kampus-C.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
 }
 
-main {
-  max-width: 800px;
-  margin: 30px auto;
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 950px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 h2 {
-  color: #2563eb;
-  margin-top: 20px;
+  color: #00796b;
+  margin-bottom: 12px;
+  border-left: 5px solid #4caf50;
+  padding-left: 10px;
 }
 
-footer {
-  text-align: center;
-  font-size: 14px;
-  color: #64748b;
-  margin: 30px 0;
+section {
+  margin-bottom: 35px;
 }
+
+/* ===== CARD STYLE ===== */
+.adv {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.card {
+  border-left: 4px solid #4caf50;
+  background: #f9fffb;
+  border-radius: 10px;
+  padding: 16px 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* ===== LIST STYLE ===== */
+ul, ol {
+  margin-left: 25px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* ===== LINK ===== */
+a {
+  color: #00897b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #00695c;
+  text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #00897b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  border-top: 3px solid #4caf50;
+}
+
